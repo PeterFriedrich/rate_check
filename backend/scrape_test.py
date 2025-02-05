@@ -54,3 +54,15 @@ for job_card in python_job_cards:
 	print(company_element.text.strip())
 	print(location_element.text.strip())
 	print()
+
+# extract attributes
+for job_card in python_job_cards:
+	links = job_card.find_all("a")
+	for link in links:
+		link_url = link["href"]
+		print(link.text.strip())
+		print(f"Apply here: {link_url}\n")
+
+for job_card in python_job_cards:
+	link_url = job_card.find_all("a")[1]["href"]
+	print(f"Apply here: {link_url}\n")

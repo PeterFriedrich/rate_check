@@ -53,4 +53,4 @@ import re
 # this matches a start, c end, *any amount of b, including 0
 re.findall("ab*c", "ac")
 
-
+k_url =  "https://www.kijiji.ca/b-services/edmonton/tutor/k0c72l1700203"

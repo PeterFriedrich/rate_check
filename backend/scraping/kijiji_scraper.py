@@ -25,4 +25,7 @@ def listings_scrape(listing_url):
 
     return urls
 
-    
+def single_listing_scrape(url):
+    # input: single listing url
+    # output: scraped out html from listing
+    pass

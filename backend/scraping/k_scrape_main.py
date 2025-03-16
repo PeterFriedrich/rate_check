@@ -2,9 +2,8 @@
 
 from kijiji_scraper import *
 
-listing_url = "https://www.kijiji.ca/b-edmonton/tutor/k0l1700203?dc=tru"
+main_listing_page_url = "https://www.kijiji.ca/b-edmonton/tutor/k0l1700203?dc=tru"
 
-for entry in listings_scrape(listing_url):
-    print(entry)
-    print('\n')
 
+# grabbing specific listings to scrape them
+listings_urls = listings_scrape(main_listing_page_url)
